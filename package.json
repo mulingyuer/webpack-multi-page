@@ -1,0 +1,39 @@
+{
+  "name": "undp-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://git.40m.net/shetuan/undp-web.git",
+  "author": "mulingyuer <1321968423@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --env development --progress --watch",
+    "build": "cross-env NODE_ENV=production webpack --env production --progress",
+    "analyze": "cross-env NODE_ENV=production webpack --env production --progress --analyze"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/runtime": "^7.15.4",
+    "babel-loader": "^8.2.3",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.5.0",
+    "css-minimizer-webpack-plugin": "^3.1.1",
+    "dart-sass": "^1.25.0",
+    "fibers": "^5.0.0",
+    "glob": "^7.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "lodash": "^4.17.21",
+    "mini-css-extract-plugin": "^2.4.3",
+    "postcss": "^8.3.11",
+    "postcss-loader": "^6.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.2.4",
+    "webpack": "^5.60.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-merge": "^5.8.0"
+  }
+}

@@ -1,0 +1,21 @@
+$color: red;
+
+@font-face {
+  font-family: "mu-font";
+  src: url("@/assets/fonts/GraublauWeb.woff.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+body {
+  color: $red;
+  font-family: "mu-font";
+  @include nowrap();
+}
+
+@media (min-resolution: 2dppx) {
+  .image {
+    background-image: #12321313;
+  }
+}

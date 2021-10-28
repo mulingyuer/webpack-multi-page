@@ -1,0 +1,22 @@
+//全局mixins
+
+//禁止选中
+@mixin no-select {
+  user-select: none;
+}
+
+//单行文本溢出
+@mixin nowrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+//指定行数溢出
+@mixin clamp($num) {
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
