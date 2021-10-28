@@ -1,8 +1,8 @@
 {
-  "name": "undp-web",
+  "name": "webpack-multi-page",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://git.40m.net/shetuan/undp-web.git",
+  "repository": "https://github.com/mulingyuer/webpack-multi-page.git",
   "author": "mulingyuer <1321968423@qq.com>",
   "license": "MIT",
   "scripts": {
