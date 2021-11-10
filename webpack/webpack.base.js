@@ -1,10 +1,10 @@
 /*
  * @Author: mulingyuer
  * @Date: 2021-10-28 11:03:37
- * @LastEditTime: 2021-10-28 15:05:31
+ * @LastEditTime: 2021-11-10 11:24:57
  * @LastEditors: mulingyuer
  * @Description:webpack基础配置
- * @FilePath: \undp-web\webpack\webpack.base.js
+ * @FilePath: \webpack-multi-page\webpack\webpack.base.js
  * 怎么可能会有bug！！！
  */
 const path = require("path");
@@ -34,6 +34,10 @@ module.exports = {
     path: pathResolve("../dist/"),  //输出的路径
     filename: "js/[name].[contenthash].min.js", //输出的js文件名（css单独设置）
     clean: true, //清理dist
+  },
+  //不打包指定的依赖（输出的 bundle 中排除依赖）
+  externals: {
+    // uikit: "UIkit",
   },
   //资源管理
   module: {
